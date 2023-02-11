@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="307.0" prefWidth="600.0" style="-fx-background-color: #c2c7c7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BmiControllers">
+   <children>
+      <Button fx:id="calculateBmi" alignment="CENTER_RIGHT" layoutX="35.0" layoutY="226.0" mnemonicParsing="false" onAction="#calculateBmiOnAction" prefHeight="47.0" prefWidth="158.0" style="-fx-cursor: hand;" text="Calculate" textFill="#1aa2dc">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="height" layoutX="137.0" layoutY="98.0" prefHeight="26.0" prefWidth="211.0" promptText="cm" style="-fx-background-radius: 15;" />
+      <Label layoutX="41.0" layoutY="97.0" prefHeight="18.0" prefWidth="102.0" text="Height" textFill="#1783f7">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="154.0" prefHeight="18.0" prefWidth="102.0" text="Weight" textFill="#1783f7">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="weight" layoutX="137.0" layoutY="154.0" prefHeight="26.0" prefWidth="211.0" promptText="kg" style="-fx-background-radius: 15;" />
+      <ImageView fitHeight="47.0" fitWidth="51.0" layoutX="35.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/calculator.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="2.0" layoutY="61.0" prefHeight="2.0" prefWidth="594.0" style="-fx-background-color: Black;" />
+      <Label alignment="CENTER_RIGHT" layoutX="323.0" layoutY="16.0" prefHeight="26.0" prefWidth="240.0" text="BMI Calculator" textFill="#0066ff">
+         <font>
+            <Font name="Algerian" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="69.0" layoutX="293.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/body-mass-index.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="close" layoutX="11.0" layoutY="8.0" mnemonicParsing="false" onAction="#closeOnAction" prefHeight="2.0" prefWidth="14.0" style="-fx-cursor: hand;" text="Button">
+         <effect>
+            <ImageInput x="1.0" y="1.0">
+               <source>
+                  <Image url="file:/C:/Users/dell/IdeaProjects/FinalGYM/src/main/resources/com/example/finalgym/Images/close.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

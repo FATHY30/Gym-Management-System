@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="1000.0" style="-fx-background-color: #b5b5ac;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.NewMemberController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="250.0" layoutY="6.0" prefHeight="82.0" prefWidth="466.0" text="NEW Member" textFill="#0a55ad">
+         <font>
+            <Font name="Algerian" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="96.0" layoutX="355.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/membership.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="108.0" prefHeight="36.0" prefWidth="168.0" text="Member ID" textFill="#2469ae">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="145.0" layoutY="173.0" prefHeight="32.0" prefWidth="266.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="phone" layoutX="145.0" layoutY="238.0" prefHeight="32.0" prefWidth="266.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <Label layoutX="14.0" layoutY="173.0" prefHeight="18.0" prefWidth="75.0" text="Name" textFill="#2469ae">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="239.0" prefHeight="30.0" prefWidth="114.0" text="Phone no" textFill="#2469ae">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="joinDate" layoutX="145.0" layoutY="302.0" prefHeight="30.0" prefWidth="266.0" style="-fx-cursor: hand;" />
+      <Label layoutX="14.0" layoutY="300.0" prefHeight="30.0" prefWidth="114.0" text="Join Date" textFill="#2469ae">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="363.0" prefHeight="30.0" prefWidth="114.0" text="Gender" textFill="#2469ae">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="108.0" prefHeight="36.0" prefWidth="226.0" text="Membership Type " textFill="#2469ae">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="169.0" prefHeight="36.0" prefWidth="220.0" text="Amount to Pay/month" textFill="#2469ae">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amount" layoutX="702.0" layoutY="173.0" prefHeight="32.0" prefWidth="266.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="age" layoutX="702.0" layoutY="362.0" prefHeight="32.0" prefWidth="266.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <Label layoutX="486.0" layoutY="360.0" prefHeight="36.0" prefWidth="226.0" text="Member Age" textFill="#2469ae">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="height" layoutX="702.0" layoutY="238.0" prefHeight="32.0" prefWidth="266.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="437.0" layoutY="236.0" prefHeight="36.0" prefWidth="290.0" text=" Member Height" textFill="#2469ae">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="weight" layoutX="702.0" layoutY="301.0" prefHeight="32.0" prefWidth="266.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <Label layoutX="486.0" layoutY="299.0" prefHeight="36.0" prefWidth="220.0" text="Member Weight" textFill="#2469ae">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER_RIGHT" layoutX="355.0" layoutY="476.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #00a0de; -fx-cursor: hand;" text="Reset" textFill="#e1e1e1">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="save" alignment="CENTER_RIGHT" layoutX="145.0" layoutY="476.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #00a7db; -fx-cursor: hand;" text="Save" textFill="#e1e1e1">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="145.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/floppy-disk.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="75.0" layoutX="349.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-synchronize-100.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="closeNewMember" layoutX="14.0" layoutY="15.0" minWidth="38.0" mnemonicParsing="false" onAction="#closeNewMemberOnAction" prefHeight="30.0" prefWidth="38.0" style="-fx-cursor: hand;" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/dell/IdeaProjects/FinalGYM/src/main/resources/com/example/finalgym/Images/close.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <ComboBox fx:id="membershipTypeBox" layoutX="701.0" layoutY="108.0" prefHeight="32.0" prefWidth="260.0" promptText="1 month" style="-fx-cursor: hand;" />
+      <ComboBox fx:id="genderBox" layoutX="145.0" layoutY="364.0" prefHeight="32.0" prefWidth="266.0" promptText="Male" style="-fx-cursor: hand;" />
+      <Label fx:id="id" layoutX="144.0" layoutY="110.0" prefHeight="32.0" prefWidth="266.0" text="00" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font></Label>
+   </children>
+   <effect>
+      <DropShadow radius="13.51" spread="0.16" width="35.04" />
+   </effect>
+</AnchorPane>
