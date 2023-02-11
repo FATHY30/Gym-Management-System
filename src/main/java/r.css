@@ -1,0 +1,3 @@
+.root {
+passwordTextField.setStyle("-fx-echo-char: ;");
+}
