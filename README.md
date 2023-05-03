@@ -1,5 +1,5 @@
 # Gym-Management-System
-management of the gym, where the program contains a login page to secure access to the program, a home page, a page to add new members, a page to modify member data or delete a member, a page to display the list of members, GUI for For better use, we can search for a specific member, a page to view and add payments, a page to calculate BMI, the program connected to MySQL database and and finally you can log out  
+management of the gym, where the program contains a login page to secure access to the program, a home page, a page to add new members, a page to modify member data or delete a member, a page to display the list of members, GUI for For better use, we can search for a specific member, a page to view and add payments, a page to calculate BMI, the program connected to MySQL database and finally you can log out  
 
 ![Capture](https://user-images.githubusercontent.com/91078726/235975440-8d3a9987-c85c-435a-abe3-de068f53e195.PNG)
 ![Capture2](https://user-images.githubusercontent.com/91078726/235975486-2ecd0e3b-1e7f-443a-b38a-b01e43d039d7.PNG)
